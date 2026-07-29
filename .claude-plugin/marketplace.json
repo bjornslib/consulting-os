@@ -1,0 +1,7 @@
+{
+  "name": "consulting-os",
+  "owner": { "name": "bjornslib", "url": "https://github.com/bjornslib" },
+  "plugins": [
+    { "name": "consulting-os", "source": ".", "description": "21-skill consulting operating system: framing, fact-base, analysis, decision, design, and communication methods for strategy engagements", "version": "0.1.0" }
+  ]
+}

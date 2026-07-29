@@ -1,0 +1,9 @@
+{
+  "name": "consulting-os",
+  "version": "0.1.0",
+  "description": "A 21-skill consulting operating system covering the full engagement lifecycle: problem framing, fact-base building, assumption audits, market sizing, competitive intelligence, customer segmentation, profit-pool analysis, strategic options, pricing, business cases, portfolio review, operating-model design, initiative prioritisation, transformation roadmaps, risk mitigation, war-gaming, KPI architecture, stakeholder alignment, executive narrative, and board memos — plus a meta-skill that sequences the other 20 for any engagement and harvests completed work into reusable IP.",
+  "author": { "name": "bjornslib" },
+  "repository": "https://github.com/bjornslib/consulting-os",
+  "license": "MIT",
+  "keywords": ["claude-code", "consulting", "strategy", "engagement-management"]
+}
