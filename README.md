@@ -85,6 +85,16 @@ Skill("consulting-os-market-sizing")
 Skill("consulting-os-executive-narrative")
 ```
 
+Each method also has a slash-command wrapper, for users who prefer typing a
+command over relying on autonomous skill-triggering. Each command forwards
+its arguments straight to the matching skill:
+
+```
+/consulting-os:plan
+/consulting-os:market-sizing
+/consulting-os:executive-narrative
+```
+
 Each skill's `SKILL.md` carries its trigger conditions: the phrases and
 situations that should lead you to reach for it. Each skill also carries a
 `references/deliverable.md` file. This file describes the expected output
@@ -97,6 +107,7 @@ consulting-os/
 ├── .claude-plugin/
 │   ├── plugin.json           # manifest: name "consulting-os", version, keywords
 │   └── marketplace.json      # one-plugin marketplace: name "consulting-os", plugins: [{source: "."}]
+├── commands/                  # thin slash-command wrappers, one per skill
 ├── skills/
 │   ├── consulting-os/                          # meta-skill (SKILL.md only)
 │   ├── consulting-os-problem-framing/          # SKILL.md + references/deliverable.md
@@ -123,11 +134,12 @@ consulting-os/
 └── README.md                  # this file
 ```
 
-The plugin ships no agents, no hooks, no MCP servers, no output styles, and
-no slash commands. Every method works as a skill. This is deliberate: the
-plugin must work in any session without a change to that session's
-permission or hook surface. Claude Code auto-discovers `skills/` from its
-default directory location, so the manifest does not need to declare it.
+The plugin ships no agents, no hooks, no MCP servers, and no output styles.
+Every method works as a skill, with a thin slash-command wrapper alongside
+it. This is deliberate: the plugin must work in any session without a
+change to that session's permission or hook surface. Claude Code
+auto-discovers `skills/` from its default directory location, so the
+manifest does not need to declare it.
 
 ## Origin
 
